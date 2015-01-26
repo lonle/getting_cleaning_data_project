@@ -30,7 +30,7 @@ Part 5.  Creating tidy data
 In order to get the average for each variable for each activity and each subject.  The data was first cleaned and separated into different datasets then merge together to create one tidy dataset.
 First the data was divided into the subjects, accelerometer and gyroscope.  And within those categories divivided into the frequency and times.  The datsets were grouped by Actitivity and summarize was used to getthe average.
 This was done for both accelerometer and gyroscope and the the two datasets were combined.
-
+Libraries dplyr and tidyr were used to accomplished this.  
 
 
 
