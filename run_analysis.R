@@ -74,7 +74,7 @@ by_acc_time <- summarize(by_acc_time, average_time=mean(total) )
 
 acc_tidy <- cbind(by_acc_freq, average_time = by_acc_time$average_time)  # add the average time column to the frequency table 
 
-gyroscope <- select(mean_std, Activity, contains("Gyro"))
+gyroscope <- select(mean_std, Activity, contains("Gyro"))          # select only the gyroscope data
 gyro_freq <- select(gyroscope, Activity, contains("fBody"))        # select the frequency data from the gyroscope
 gyro_freq <- gather(gyro_freq, category, total, -Activity)              # gather the category and total, leave Actitvity as is
 by_gyro_freq <- group_by(gyro_freq, Activity, category)                 # group the frequency dataset by Activity and category
